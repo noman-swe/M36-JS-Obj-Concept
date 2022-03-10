@@ -27,6 +27,8 @@ else {
 /*  if object property & value position are changed then stringify will not work > const first = {a: 1, b: 2}; const second = {b: 2, a: 1}; <
 that's why bellow method is used */
 
+const first1 = { a: 1, b: 2, c: 4};
+const second2 = { a: 1, b: 2 };
 function compareObjects(obj1, obj2) {
     if (Object.keys(obj1).length != Object.keys(obj2).length) {
         return false;
@@ -39,5 +41,5 @@ function compareObjects(obj1, obj2) {
     return true;
 }
 
-const compare = compareObjects(first, second);
+const compare = compareObjects(first1, second2);
 console.log(compare);
