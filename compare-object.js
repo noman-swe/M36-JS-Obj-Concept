@@ -1,27 +1,27 @@
 const first = { a: 1, b: 2 };
 const second = { a: 1, b: 2 };
 const thrid = first;
-/* if(first.a==second.a){
+if(first.a==second.a){
     console.log('equal');
 }else{
     console.log('different');
 }
- */
 
-/* if(first === thrid){
+
+if(first === thrid){
     console.log('equal');
 }else{
     console.log('different');
-} */
+}
 
 // making string >(===) string cheek dewar somoy just value check kore
 const firstStringify = JSON.stringify(first);
 const secondStringify = JSON.stringify(second);
 if (firstStringify === secondStringify) {
-    // console.log('equal');
+    console.log('equal');
 }
 else {
-    // console.log('Not Equal');
+    console.log('Not Equal');
 }
 
 /*  if object property & value position are changed then stringify will not work > const first = {a: 1, b: 2}; const second = {b: 2, a: 1}; <
